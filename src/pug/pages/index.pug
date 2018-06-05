@@ -1,0 +1,15 @@
+extends ../includes/layout.pug
+block metatags
+  -var title = 'SEDAPAL | RECIBO'
+  -var description = 'Bienvenid@, en este sitio encontrarás información sobre tu último recibo de servicios.'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  div.container
+   header.row
+   div.row
+    div.col-xs-12
+      include ../includes/components/sedapal/tab_panel.pug
+   footer.row
+   

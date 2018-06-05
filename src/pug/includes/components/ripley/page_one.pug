@@ -1,0 +1,76 @@
+.row
+ .col-xs-12
+  article
+   h3 Hola «NOM_CLIENTE»,  
+   p Estos son los productos que tienes con nosotros:
+.row
+ .col-xs-12
+  table
+   thead
+    tr
+     th.purper.center Productos
+     th.purper.center N° Cuentas/Tarjetas     
+     th.purper.center Monto de Línea  
+   tbody
+    tr
+     td.center(data-column="Productos") «TIPO_PRODUCTO»    
+     td.center(data-column="N° Cuentas/Tarjetas") «NUM_TARJETA»
+     td.center(data-column="Monto de Línea") «LINEA_CREDITO»
+.row
+ .col-xs-12.col-lg-6
+  table
+   thead
+    tr
+     th.purper(colspan="4") En Resumen
+      tbody
+       tr
+        td(colspan="3") NÚMERO DE TARJETA RIPLEY «NUM_TARJETA»    
+        td MONEDA
+       tr
+        td(colspan="3")  
+        td SOLES 
+       tr
+        td Línea de Crédito (*)   
+        td(colspan="2")  Disponible efectivo express
+        td Disponible compras
+       tr
+        td   
+        td(colspan="2")  «DISP_EFEC_ESPRESS»
+        td «DIS_EFEC_ESPRESS»  
+       tr
+        td Crédito Utilizado +   
+        td Cargos = 
+        td Deuda Total (*)
+        td Monto Atrasado  
+       tr
+        td «CRED_UTILIZADO»   
+        td «COMISION»
+        td «SOBREGIRO»
+        td «MORA_SOBREGIRO»   
+       tr
+        td    
+        td  
+        td 
+        td  
+ .col-xs-12.col-lg-6
+  table
+   thead
+    tr
+     th.gold(colspan="2") Lo más importante
+   tbody
+    tr
+     td Último dia de Pago (*)    
+     td Pago minimo del Mes (*)
+    tr
+     td «ULTIMO_DIA_PAGO»    
+     td «PAGO_MINIMO_MES_PM»
+    tr
+     td Periodo de Facturación    
+     td Pago Total del Mes (*)
+    tr
+     td «PERIODO_FACTURACION»  
+     td «PAGO_TOTAL_MES» 
+    tr
+     td   
+     td   
+

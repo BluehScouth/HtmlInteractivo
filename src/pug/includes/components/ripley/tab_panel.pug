@@ -1,0 +1,18 @@
+div.tab-wrap
+  input.tab(name='tabGroup2', type='radio', id='tab4', checked)
+  label(for='tab4') Tus Cuentas
+  input.tab(name='tabGroup2', type='radio', id='tab3')
+  label(for='tab3') Tus Consumos
+  input.tab(name='tabGroup2', type='radio', id='tab2')
+  label(for='tab2') Tus RipleyPuntos
+  input.tab(name='tabGroup2', type='radio', id='tab1')
+  label(for='tab1') Novedades para ti
+
+  div.tab__content
+      include ./page_two.pug   
+  div.tab__content
+              
+  div.tab__content
+      include ./page_four.pug
+  div.tab__content
+      include ./page_five.pug
